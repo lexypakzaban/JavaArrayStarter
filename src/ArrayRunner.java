@@ -18,5 +18,30 @@ public class ArrayRunner
             System.out.println(myClass[i]);
         }
 
+        String[] names = {"Michael", "Brian", "Duncan", "Bennett", "Martin"
+        , "Jessica", "Lexy", "Zoe", "Jimmy", "Sanjit", "Andrew", "Will"};
+
+        String[] months = {"February", "October", "March", "September", "July",
+        "February", "November", "December", "August", "May", "September", "December"};
+
+        String[] colors = {"Green", "Fuchsia", "Purple", "Turquoise", "Cyan",
+        "Purple", "Pink", "Indigo", "Green", "Blue", "Green", "Space Black"};
+
+        System.out.println("There are " + names.length + " names on the list.");
+
+        names[11] = "Mr.Howe";
+
+        for (int i = 0; i<12; i++){
+            myClass[i] = new Student(names[i], months[i], colors[i]);
+        }
+        System.out.println(myClass[7]);
+        //System.out.println(myClass); incorrect
+
+        System.out.println("Print out the students!");
+
+        for (Student s: myClass){
+            System.out.println(s);
+        }
+
     }
 }
